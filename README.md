@@ -7,7 +7,7 @@ Substantial feature enhancements required [breaking changes in v6.0 and to a les
 ## Az PowerShell Module 9.2.x issue
 
 **Az PowerShell Module 9.2.x has a known issue (bug).** This bug causes multiple failures of EPAC and any other Policy as Code solution depending on Az Module. **Az PowerShell Module 9.3.0 fixed this issue.**
-
+aaa
 ## Documentation
 
 In v7.0, the documentation source has moved to the [file './Docs/index.md'](Docs/index.md).
