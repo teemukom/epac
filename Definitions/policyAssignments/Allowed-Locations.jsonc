@@ -1,0 +1,55 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Azure/enterprise-azure-policy-as-code/main/Schemas/policy-assignment-schema.json",
+    "nodeName": "/Loc/",
+    "assignment": {
+        "name": "allowed-locations",
+        "append": "true",
+        "displayName": "Allowed Locations",
+        "description": "Sets the allowed locations"
+    },
+    "definitionEntry": {
+        "policySetName": "Allowed-Locations",
+        "displayName": "Allowed Locations Initiative"
+    },
+    "children": [
+        {
+            "nodeName": "Dev/",
+            "assignment": {
+                "name": "-dev",
+                "displayName": " Dev",
+                "description": " for EPAC Dev"
+            },
+            "parameters": {
+                "AllowedLocations": [
+                    "westeurope",
+                    "northeurope",
+                    "swedencentral"
+                ]
+            },
+            "scope": {
+                "epac-dev": [
+                    "/providers/Microsoft.Management/managementGroups/GH-EPAC"
+                ]
+            }
+        },
+        {
+            "nodeName": "Prod/",
+            "assignment": {
+                "name": "-prod",
+                "displayName": " Production",
+                "description": " for Production"
+            },
+            "parameters": {
+                "AllowedLocations": [
+                    "westeurope",
+                    "northeurope"
+                ]
+            },
+            "scope": {
+                "tenant": [
+                    "/providers/Microsoft.Management/managementGroups/contoso"
+                ]
+            }
+        }
+    ]
+}
