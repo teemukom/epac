@@ -21,8 +21,7 @@ jobs:
   build:
     name: Build Deployment Plan
     runs-on: ubuntu-latest
-    environment:
-      name: EPAC-DEV
+    environment: development
     steps:
       - name: Checkout
         uses: actions/checkout@v3.3.0
@@ -91,8 +90,7 @@ jobs:
     needs: build
     name: Deploy Policy Plan
     runs-on: ubuntu-latest
-    environment:
-      name: EPAC-DEV
+    environment: development
     steps:
       - name: Checkout
         uses: actions/checkout@v3.3.0
@@ -133,8 +131,7 @@ jobs:
     needs: deployPolicy
     name: Deploy Policy Roles
     runs-on: ubuntu-latest
-    environment:
-      name: EPAC-DEV
+    environment: development
     steps:
       - name: Checkout
         uses: actions/checkout@v3.3.0
