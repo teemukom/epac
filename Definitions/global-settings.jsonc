@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/Azure/enterprise-azure-policy-as-code/main/Schemas/global-settings-schema.json",
-    "pacOwnerId": "eeb3efb7-6861-4f6b-b85d-a8f67300da1d",
+    "pacOwnerId": "eeb3efb7-6861-4f6b-b85d-a8f67300da1f",
     "managedIdentityLocations": {
         "*": "westeurope"
     },
