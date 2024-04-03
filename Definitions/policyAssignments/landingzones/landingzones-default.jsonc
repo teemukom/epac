@@ -70,6 +70,23 @@
                             "message": "Web Application Firewall (WAF) must be enabled for Application Gateway."
                         }
                     ]
+                },
+                {
+                    "nodeName": "NoNSG",
+                    "assignment": {
+                        "name": "Deny-Subnet-Without-Nsg",
+                        "displayName": "Subnets should have a Network Security Group",
+                        "description": "This policy denies the creation of a subnet without a Network Security Group to protect traffic across subnets."
+                    },
+                    "definitionEntry": {
+                        "policyName": "Deny-Subnet-Without-Nsg",
+                        "displayName": "Deny Subnet without NSG"
+                    },
+                    "nonComplianceMessages": [
+                        {
+                            "message": "Subnets must have a Network Security Group."
+                        }
+                    ]
                 }
             ]
         },
