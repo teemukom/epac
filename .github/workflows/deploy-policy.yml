@@ -34,8 +34,8 @@ jobs:
         with:
           name: plans-${{ inputs.pacEnvironmentSelector }}
 
-      - name: Display structure of downloaded files
-        run: ls -R
+      - name: Show envs
+        run: env
 
       - name: Install Required Modules
         uses: Azure/powershell@v2
