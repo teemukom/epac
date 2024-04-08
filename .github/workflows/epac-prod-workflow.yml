@@ -29,6 +29,16 @@ jobs:
       PAC_DEFINITIONS_FOLDER: ./Definitions
     secrets: inherit
 
+  planPRComment:
+    name: Plan prod
+    uses: ./.github/workflows/plan-pr-comment.yml
+    with:
+      pacEnvironmentSelector: tenant
+      planGitHubEnvironment: tenant-plan
+      PAC_OUTPUT_FOLDER: ./Output
+      PAC_DEFINITIONS_FOLDER: ./Definitions
+    secrets: inherit
+
   deployPolicy:
     name: Deploy prod Policy Changes
     needs: plan
