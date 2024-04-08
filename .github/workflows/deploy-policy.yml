@@ -34,9 +34,6 @@ jobs:
         with:
           name: plans-${{ inputs.pacEnvironmentSelector }}
 
-      - name: Show envs
-        run: env
-
       - name: Install Required Modules
         uses: Azure/powershell@v2
         with:
