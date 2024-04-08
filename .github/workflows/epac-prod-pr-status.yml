@@ -1,6 +1,9 @@
 # This pipeline is used to deploy Policies, Initiative definitions and Assignments into Azure.
 name: EPAC PROD PR Status Workflow
-
+permissions:
+  pull-requests: write
+  contents: read
+  id-token: write
 on:
   pull_request:
     branches:
@@ -15,11 +18,6 @@ on:
 env:
   PAC_OUTPUT_FOLDER: ./Output
   PAC_DEFINITIONS_FOLDER: ./Definitions
-
-permissions:
-  pull-requests: write
-  contents: read
-  id-token: write
 
 jobs:
   plan:

@@ -1,8 +1,5 @@
 name: 'Reusable Workflow: Plan PR Comment'
 
-permissions: 
-  pull-requests: write
-  
 on:
   workflow_call:
     inputs:
