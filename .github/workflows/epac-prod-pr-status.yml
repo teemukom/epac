@@ -18,6 +18,8 @@ env:
 
 permissions:
   pull-requests: write
+  contents: read
+  id-token: write
 
 jobs:
   plan:
