@@ -20,7 +20,7 @@ permissions:
 
 jobs:
   plan:
-    name: Plan prod
+    name: Plan to PR comment
     uses: ./.github/workflows/plan-pr-comment.yml
     with:
       pacEnvironmentSelector: tenant
