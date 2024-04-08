@@ -1,0 +1,30 @@
+# This pipeline is used to deploy Policies, Initiative definitions and Assignments into Azure.
+name: EPAC PROD PR Status Workflow
+
+on:
+  pull_request:
+    branches:
+      - main
+    types:
+      - opened
+    paths:
+      - 'Definitions/**'
+
+env:
+  PAC_OUTPUT_FOLDER: ./Output
+  PAC_DEFINITIONS_FOLDER: ./Definitions
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  plan:
+    name: Plan prod
+    uses: ./.github/workflows/plan-pr-comment.yml
+    with:
+      pacEnvironmentSelector: tenant
+      planGitHubEnvironment: tenant-plan
+      PAC_OUTPUT_FOLDER: ./Output
+      PAC_DEFINITIONS_FOLDER: ./Definitions
+    secrets: inherit
