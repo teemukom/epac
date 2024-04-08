@@ -17,8 +17,7 @@ env:
   PAC_DEFINITIONS_FOLDER: ./Definitions
 
 permissions:
-  contents: read
-  id-token: write
+  pull-requests: write
 
 jobs:
   plan:
