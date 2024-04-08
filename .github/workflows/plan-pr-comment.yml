@@ -51,7 +51,7 @@ jobs:
         with:
           inlineScript: |
             Build-DeploymentPlans -PacEnvironmentSelector ${{ inputs.pacEnvironmentSelector }} -InformationAction Continue
-            "outputContent=$epacInfoStream" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8
+            "outputContent=$epacInfoStream" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8 -Append
           azPSVersion: "latest"
 
       - name: Comment PR
