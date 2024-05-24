@@ -48,7 +48,7 @@ jobs:
           azPSVersion: "latest"
 
       - name: Azure Login
-        uses: azure/login@hf_447_release
+        uses: azure/login@v2
         with:
           client-id: ${{ secrets.AZURE_CLIENT_ID }}
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
