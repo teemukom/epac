@@ -59,6 +59,8 @@ jobs:
         uses: azure/powershell@v2
         with:
           inlineScript: |
+            Install-Module Az.Accounts -MinimumVersion 3.0.0 -Force
+            Import-Module Az.Accounts -MinimumVersion 3.0.0 -Force
             Build-DeploymentPlans -PacEnvironmentSelector ${{ inputs.pacEnvironmentSelector }} -InformationAction Continue
           azPSVersion: "latest"
 
