@@ -11,11 +11,9 @@
     },
     "parameters": {
         "logAnalytics": "/subscriptions/0fdb229c-1b35-4afe-b987-7ff381c6d2a7/resourceGroups/RG-LOGGING/providers/Microsoft.OperationalInsights/workspaces/la-mgmt-westeurope", // Replace with your central Log Analytics workspace ID
-        "logAnalytics_1": "//subscriptions/0fdb229c-1b35-4afe-b987-7ff381c6d2a7/resourceGroups/RG-LOGGING/providers/Microsoft.OperationalInsights/workspaces/la-mgmt-westeurope", // Replace with your central Log Analytics workspace ID
         "emailSecurityContact": "komu@komu.fi", // Security contact email address for Microsoft Defender for Cloud
         "ascExportResourceGroupName": "mdfc-export", // Resource group to export Microsoft Defender for Cloud data to
-        "ascExportResourceGroupLocation": "westeurope", // Location of the resource group to export Microsoft Defender for Cloud data to
-        "dataCollectionRuleResourceId": "" // Resource Id for the DCR for Azure Monitor - see https://github.com/Azure/Enterprise-Scale/blob/main/eslzArm/resourceGroupTemplates/dataCollectionRule.json
+        "ascExportResourceGroupLocation": "westeurope" // Location of the resource group to export Microsoft Defender for Cloud data to
     },
     "children": [
         {
