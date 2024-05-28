@@ -4,7 +4,7 @@
             "name": "Allow-PrivateDNSZones-To-Connectivity",
             "displayName": "Allow Private DNS Zones to be created to Connectivity",
             "exemptionCategory": "Waiver",
-            "scope": "/providers/Microsoft.Management/managementGroups/contoso/contoso-platform-connectivity",
+            "scope": "/subscriptions/773083bf-455d-4545-947f-1de87d16b08b",
             "policyAssignmentId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyAssignments/Deny-Private-DNS-Zones"
         }
     ]
