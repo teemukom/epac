@@ -42,7 +42,8 @@
             "parameters": {
                 "AllowedLocations": [
                     "westeurope",
-                    "northeurope"
+                    "northeurope",
+                    "swedencentral"
                 ]
             },
             "scope": {
